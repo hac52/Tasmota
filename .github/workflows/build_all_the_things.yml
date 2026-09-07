@@ -20,7 +20,6 @@ on:
 jobs:
   os-check-win:
     runs-on: windows-latest
-    if: github.repository == 'arendst/Tasmota'
     strategy:
       fail-fast: true
       matrix:
