@@ -51,7 +51,6 @@ jobs:
 
   os-check-mac:
     runs-on: macos-14
-    if: github.repository == 'arendst/Tasmota'
     strategy:
       fail-fast: true
       matrix:
@@ -83,7 +82,6 @@ jobs:
 
   base-images:
     runs-on: ubuntu-latest
-    if: github.repository == 'arendst/Tasmota'
     strategy:
       fail-fast: true
       matrix:
@@ -150,7 +148,6 @@ jobs:
 
   language-images:
     runs-on: ubuntu-latest
-    if: github.repository == 'arendst/Tasmota'
     strategy:
       fail-fast: true
       matrix:
