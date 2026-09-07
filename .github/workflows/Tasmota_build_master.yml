@@ -17,7 +17,6 @@ concurrency:
 jobs:
   safeboot-images:
     runs-on: ubuntu-latest
-    if: github.repository == 'arendst/Tasmota'
     continue-on-error: true
     strategy:
       matrix:
@@ -72,7 +71,6 @@ jobs:
 
   base-images:
     runs-on: ubuntu-latest
-    if: github.repository == 'arendst/Tasmota'
     continue-on-error: true
     strategy:
       matrix:
@@ -121,7 +119,6 @@ jobs:
   base32-images:
     needs: safeboot-images
     runs-on: ubuntu-latest
-    if: github.repository == 'arendst/Tasmota'
     continue-on-error: true
     strategy:
       matrix:
@@ -186,7 +183,6 @@ jobs:
 
   language-images:
     runs-on: ubuntu-latest
-    if: github.repository == 'arendst/Tasmota'
     continue-on-error: true
     strategy:
       matrix:
@@ -224,7 +220,6 @@ jobs:
   language32-images:
     needs: safeboot-images
     runs-on: ubuntu-latest
-    if: github.repository == 'arendst/Tasmota'
     continue-on-error: true
     strategy:
       matrix:
