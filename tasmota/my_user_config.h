@@ -538,6 +538,7 @@
   #define WEBSERVER_ADVERTISE                    // Provide access to webserver by name <Hostname>.local/
   // #define MQTT_HOST_DISCOVERY                    // Find MQTT host server (overrides MQTT_HOST if found) - disabled by default because it causes blocked repeated 3000ms pauses
 
+
 // -- Time ----------------------------------------
 #define USE_TIMERS                               // Add support for up to 16 timers (+2k2 code)
   #define USE_TIMERS_WEB                         // Add timer webpage support (+4k5 code)
