@@ -17,7 +17,6 @@ concurrency:
 jobs:
   safeboot-images:
     runs-on: ubuntu-latest
-    if: github.repository == 'hac52/Tasmota'
     continue-on-error: true
     strategy:
       matrix:
