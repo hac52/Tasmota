@@ -190,8 +190,8 @@
 #define FRIENDLY_NAME          "Tasmota"         // [FriendlyName] Friendlyname up to 32 characters used by webpages and Alexa
 #define EMULATION              EMUL_NONE         // [Emulation] Select Belkin WeMo (single relay/light), Hue Bridge (multi relay/light) or Shelly emulation (EMUL_NONE, EMUL_WEMO, EMUL_HUE or EMUL_SHELLY)
 #define EMULATION_HUE_1ST_GEN  false             // [Emulation] Force SetOption109 1 - if you only have Echo Dot 2nd gen devices
-//#define USE_CORS                                 // [Cors] Enable CORS - Be aware that this feature is unsecure ATM (https://github.com/arendst/Tasmota/issues/6767)
-  #define CORS_DOMAIN            ""                // [Cors] CORS Domain for preflight requests
+#define USE_CORS                                 // [Cors] Enable CORS - Be aware that this feature is unsecure ATM (https://github.com/arendst/Tasmota/issues/6767)
+#define CORS_DOMAIN            "*"                // [Cors] CORS Domain for preflight requests
 
 // -- HTTP Options --------------------------------
 #define GUI_NOSHOW_MODULE      false             // [SetOption141] Do not show module name in GUI main menu
